@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D098A22-3737-41FC-9CB9-47EBA97920A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication23</RootNamespace>
+    <AssemblyName>WindowsFormsApplication23</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aitDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>aitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentDetails.Designer.cs">
+      <DependentUpon>AppointmentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appointmentreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appointmentreport.Designer.cs">
+      <DependentUpon>appointmentreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctor.Designer.cs">
+      <DependentUpon>doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientupdats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientupdats.Designer.cs">
+      <DependentUpon>patientupdats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientreport.Designer.cs">
+      <DependentUpon>patientreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="patientdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientdetails.Designer.cs">
+      <DependentUpon>patientdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportprint.Designer.cs">
+      <DependentUpon>reportprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reportprint1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportprint1.Designer.cs">
+      <DependentUpon>reportprint1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supremhospitalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supremhospitalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="supremhospitalDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supremhospitalDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="supremhospitalDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>supremhospitalDataSet2.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AppointmentDetails.resx">
+      <DependentUpon>AppointmentDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appointmentreport.resx">
+      <DependentUpon>appointmentreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctor.resx">
+      <DependentUpon>doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientupdats.resx">
+      <DependentUpon>patientupdats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientreport.resx">
+      <DependentUpon>patientreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientdetails.resx">
+      <DependentUpon>patientdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="reportprint.resx">
+      <DependentUpon>reportprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportprint1.resx">
+      <DependentUpon>reportprint1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="aitDataSet.xsc">
+      <DependentUpon>aitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="aitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>aitDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="aitDataSet.xss">
+      <DependentUpon>aitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="supremhospitalDataSet.xsc">
+      <DependentUpon>supremhospitalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="supremhospitalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>supremhospitalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="supremhospitalDataSet.xss">
+      <DependentUpon>supremhospitalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="supremhospitalDataSet1.xsc">
+      <DependentUpon>supremhospitalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="supremhospitalDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>supremhospitalDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="supremhospitalDataSet1.xss">
+      <DependentUpon>supremhospitalDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="supremhospitalDataSet2.xsc">
+      <DependentUpon>supremhospitalDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="supremhospitalDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>supremhospitalDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="supremhospitalDataSet2.xss">
+      <DependentUpon>supremhospitalDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suprem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="supremhospital.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
